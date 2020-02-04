@@ -1,0 +1,25 @@
+{
+  "name": "fireflyio-router",
+  "version": "0.0.1",
+  "description": "Fireflyio module to controle and manage the routing part in the app.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dobobaie/firefly-io.git"
+  },
+  "keywords": [
+    "socket.io",
+    "rest",
+    "api",
+    "router"
+  ],
+  "author": "Dobobaie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dobobaie/firefly-io/issues"
+  },
+  "homepage": "https://github.com/dobobaie/firefly-io#readme"
+}
