@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/dobobaie/fireflyio-router/issues"
   },
-  "homepage": "https://github.com/dobobaie/fireflyio-router#readme"
+  "homepage": "https://github.com/dobobaie/fireflyio-router#readme",
+  "dependencies": {
+    "bluebird": "^3.7.2"
+  }
 }
