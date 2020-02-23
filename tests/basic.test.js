@@ -3,7 +3,7 @@ const FireflyioRouter = require('../lib');
 
 (async () => {
   const app = new Fireflyio({ debug: true, allowedHttpRequests: true });
-  
+
   app.extend(FireflyioRouter);
 
   app.use(async (ctx, next) => {
@@ -35,6 +35,13 @@ const FireflyioRouter = require('../lib');
         message: 'Hello'
       };
     });
+
+  app.socket.on("clientConnected", client =>
+    client.emit("HELLO_CLIENT", (_, next) => {
+      // everything is ok
+      next();
+    }, 'Hello Fireflyio')
+  );
 
   await app.listen(4000);
 })();
